@@ -27,3 +27,40 @@ If you look through the URL, you should see that one of the GET parameters in th
 It turns out that, while the other parameters provide useful data to Google, only the q parameter is required to perform a search. You can test this for yourself by visiting https://www.google.com/search?q=Harvard, deleting all the other parameters. You should see the same Google results!
 
 Using this information, we can actually re-implement a front end for Google’s homepage. Paste the below into an HTML file called index.html, and open it in a browser.
+
+`
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+    </head>
+    <body>
+        <form action="https://google.com/search">
+            <input type="text" name="q">
+            <input type="submit" value="Google Search">
+        </form>
+    </body>
+</html>
+`
+
+When you open this page in a browser, you should see a (very simple) HTML form. Type in a search query like “Harvard” and click “Google Search”, and you should be taken to Google’s search results page!
+
+How did that work? In this case, the `action` attribute on the `form` told the browser that when the form is submitted, the data should be sent to `https://google.com/search`. And by adding and `input` field to the form whose `name` attribute was `q`, whatever the user types into that fields is included as GET parameter in the URL.
+
+Your task in this project is to expand on this site, creating your own front end for Google Search, as by exploring Google’s interface to identify what GET parameters it expects and adding the necessary HTML and CSS to your website.
+
+### Specification
+
+Your website must meet following requirements.
+
+* Pages: Your website should have at least three pages: one for Google Search, one for Google Image Search, and one for Google Advanced Search. 
+
+    * On the Google Search page, there should be links in the upper-right of the page to go to Image Search or Advanced Search. On each of the other two pages, there should be a link in the upper-right to go back to Google Search.
+
+* Query Text. On the Google Search page, the user should be able to type in a query, click “Google Search”, and be taken to the Google search results for that page. 
+
+    * Like Google’s own, your search bar should be centered with rounded corners. The search button should also be centered, and should be beneath the search bar.
+
+* Query Images. On the Google Image Search page, the user should be able to type in a query, click a search button, and be taken to the Google Image search results for that page.
+
+* Query Advanced. On the Google Advanced Search page, the user should be able to provide input for the following four fields (taken from Google’s own advanced search options) 
