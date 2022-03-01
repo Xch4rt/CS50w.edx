@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="styles.css"><!--Link CSS-->
         <title>Search</title>
     </head>
     <body>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+       <nav>
+           <a href="image_search.html">Google Images</a>
+           <a href="advanced_search.html">Google Advanced Search</a>
+       </nav>
+
+       <section class="sec-1">
+           <img src="https://www.google.es/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="" class="logo">
+           <form action="https://www.google.com/search" method="get">
+               <div class="search-box">
+                   <svg class="search-icon" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                   </svg>
+                   <input type="text" class="search-input" name="q">
+                   
+                   <input type="submit" class="search-btn" value="Google Search" onclick="location.href='';">
+                   <input type="submit" class="search-btn" value="I'm Feeling Lucky" onclick="location.href='';">
+               </div>
+           </form>
+           <div class="lang">
+               Google offered in:
+                <a href="#">Nicaragua</a>
+           </div>
+       </section>
+       <footer>
+           <h4>Nicaragua</h4>
+           <div class="links">
+               <div class="link1">
+                <a href="#">Sobre Google</a>
+                <a href="#">Publicidad</a>
+                <a href="#">Negocios</a>
+                <a href="#">Cómo funciona la Búsqueda</a>
+               </div>
+               
+               <div class="link2">
+                <a href="#">Privacidad</a>
+                <a href="#">Condiciones</a>
+                <a href="#">Términos</a>
+            </div>
+           </div>
+           
+       </footer>
     </body>
 </html>
