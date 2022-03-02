@@ -40,12 +40,7 @@ nav a:hover{
   flex: 1;
 }
 
-.sec-1 .logo{
-  display: block;
-  margin: 0px auto;
-  margin-top: 107px; 
-  margin-bottom: 20px;
-}
+
 
 .search-box{
   width: 580px;
@@ -159,3 +154,53 @@ footer a:hover{
 .link2{
   padding-right: 18px;
 }
+
+/* Image Search style*/
+
+.BigDiv1{
+  margin-top: 170px;
+  margin-bottom: 50px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+.BigDiv2{
+  min-height: 150px;
+  max-height: 290px;
+  height: calc(100% - 560px);
+}
+.BigDiv3{
+  min-height: 92px;
+}
+.BigDiv4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.div_1{
+  max-height: 92px;
+  position: relative;
+}
+.div_2{
+  height: 100%;
+  margin-top: auto;
+}
+
+
+.logo{
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  width: auto;
+}
+.image_{
+  white-space: nowrap;
+  position: absolute;
+  bottom: 0px;
+  left: 215px;
+  font-size: 18px;
+  color: #4487f6;
+}
+
